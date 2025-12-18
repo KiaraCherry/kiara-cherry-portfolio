@@ -1,0 +1,35 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+}
+
+
+.nav-links a {
+    margin-left: 1.8rem;
+    font-weight: 500;
+}
+
+
+.hero {
+    max-width: 1200px;
+    margin: auto;
+    padding: 6rem 3rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+}
+
+
+.page {
+    max-width: 1100px;
+    margin: auto;
+    padding: 5rem 3rem;
+}
+
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2.5rem;
+}

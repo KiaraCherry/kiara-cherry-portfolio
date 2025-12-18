@@ -1,0 +1,34 @@
+.hero-card {
+    background: linear-gradient(160deg, var(--sage-soft), var(--lavender-soft));
+    padding: 3rem;
+    border-radius: var(--radius-lg);
+}
+
+
+button {
+    padding: 0.7rem 1.6rem;
+    border-radius: var(--radius-md);
+    border: none;
+    background: var(--sage);
+    cursor: pointer;
+}
+
+
+.project-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+
+.project-card h3 {
+    margin-bottom: 0.6rem;
+}
+
+
+.project-meta {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 1rem;
+}
