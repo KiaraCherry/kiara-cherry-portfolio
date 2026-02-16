@@ -4,45 +4,323 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kiara Cherry | Portfolio </title>
-    <link rel="stylesheet" href="css/variables.css" />
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/components.css" />
+    <title>Kiki's Delivery Website 🧹✨</title>
+    <link rel="stylesheet" href="style/style.css">
     <script defer src="js/script.js"></script>
-
 </head>
 
 <body>
+    <!-- Animated clouds in background -->
+    <div class="clouds">
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+        <div class="cloud cloud3"></div>
+        <div class="cloud cloud4"></div>
+    </div>
 
-    <nav class="nav">
-        <strong>Kiara Cherry</strong>
-        <div class="nav-links">
-            <a href="projects.html">Projects</a>
-            <a href="experience.html">Experience</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+    <!-- Stars for magical effect -->
+    <div class="stars"></div>
+
+    <!-- Custom cursor (broom) -->
+    <div class="broom-cursor"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <h1 class="logo">🧹 Kiki's Delivery Website</h1>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
         </div>
     </nav>
 
-    <section class="hero">
-        <div class="hero-card">
-            <h1>Computer Systems Technology Student</h1>
-            <p>
-                Backend & full‑stack developer focused on authentication,
-                data‑driven systems, and mobile‑first design.
-            </p>
-            <br />
-            <button onclick="goTo('projects.html')">View Projects</button>
-        </div>
-
-
-        <div>
-            <p>🎓 BCIT CST Diploma</p>
-            <p>🏆 President’s Entrance Award</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="pixel-character">
+                <div class="character-container">
+                    <!-- Pixel art Kiki-inspired character -->
+                    <div class="pixel-kiki">
+                        <img src="assets/images/kiki.png" alt="Kiki Pixel Art">
+                    </div>
+                </div>
+            </div>
+            <h2 class="hero-title">
+                <span class="title-line">Hi, I'm Kiara Cherry</span>
+                <span class="title-line">Special Delivery: Creative Solutions</span>
+            </h2>
+            <p class="hero-subtitle">Computer Systems Technology student at BCIT | Former hockey team captain delivering
+                web experiences, games, and VR simulations with determination and a touch of magic ✨</p>
+            <button class="cta-button">View My Work</button>
         </div>
     </section>
 
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <h2 class="section-title">About Me 🌙</h2>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="card-icon">👩‍💻</div>
+                    <h3>The Journey</h3>
+                    <p>Like Kiki leaving home to find her way, I'm on my own journey through Computer Systems Technology
+                        at BCIT. From web development to VR simulations and game design, I'm exploring every corner of
+                        the tech world and creating magical experiences along the way.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🎨</div>
+                    <h3>The Craft</h3>
+                    <p>I specialize in full-stack web development (HTML5, CSS3, JavaScript, Node.js), game development
+                        (Unity, libGDX), and VR simulations. Whether it's building responsive websites, creating
+                        interactive games, or debugging complex C# systems, every project is a special delivery!</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">✨</div>
+                    <h3>The Magic</h3>
+                    <p>BCIT President's Entrance Award recipient, hockey team captain, and lifelong learner. I bring
+                        leadership, adaptability, and a collaborative spirit to every project. I thrive under pressure
+                        and believe every line of code should tell a story.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="section-container">
+            <h2 class="section-title">My Toolkit 🧰</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>💻 Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Kotlin</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>🎮 Game & VR Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Unity</span>
+                        <span class="skill-tag">libGDX</span>
+                        <span class="skill-tag">VR Development</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>🌐 Web Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>🎨 Frontend Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">Tailwind</span>
+                        <span class="skill-tag">jQuery</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>🛠️ Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Bitbucket</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Trello</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>📊 Data & Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Data Modeling</span>
+                        <span class="skill-tag">Statistics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="section-container">
+            <h2 class="section-title">Recent Deliveries 📦</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image project-1"></div>
+                    <div class="project-content">
+                        <h3>BCIT MRI VR Simulation</h3>
+                        <p>Contributing to a virtual reality medical training simulation for MRI students. Debugging
+                            Unity C# systems, designing an interactive waiting room, and porting VR functionality across
+                            platforms.</p>
+                        <div class="project-tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">VR Development</span>
+                        </div>
+                        <button class="project-btn" onclick="window.location.href='mri-vr-simulation.html'">View Project
+                            →</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image project-2"></div>
+                    <div class="project-content">
+                        <h3>BloomGreener Web App</h3>
+                        <p>Full-stack web application encouraging eco-friendly habits with tips, reminders, and
+                            personalized tasks. Collaborated with a team of five using Git/GitHub for seamless version
+                            control.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <button class="project-btn" onclick="window.location.href='bloomgreener.html'">View Project
+                            →</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image project-3"></div>
+                    <div class="project-content">
+                        <h3>GoStudy Mobile App</h3>
+                        <p>Mobile-first web application helping students find study locations based on preferences and
+                            ratings. Built responsive front-end features with HTML5, CSS3, and JavaScript.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <button class="project-btn" onclick="window.location.href='gostudy.html'">View Project
+                            →</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image project-4"></div>
+                    <div class="project-content">
+                        <h3>Sims 4 Mod Development</h3>
+                        <p>Custom gameplay systems using Python to extend player mechanics and interactions. Built
+                            event-driven scripting systems and optimized mod functionality for performance.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Game Design</span>
+                            <span class="tag">Scripting</span>
+                        </div>
+                        <button class="project-btn" onclick="window.location.href='sims4-mod.html'">View Project
+                            →</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image project-5"></div>
+                    <div class="project-content">
+                        <h3>libGDX Java Game</h3>
+                        <p>Single-player game built with libGDX framework. Implemented data structures to manage in-game
+                            variables and states, developing technical problem-solving skills.</p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">libGDX</span>
+                            <span class="tag">Game Dev</span>
+                        </div>
+                        <button class="project-btn" onclick="window.location.href='libgdx-game.html'">View Project
+                            →</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image project-6"></div>
+                    <div class="project-content">
+                        <h3>Python Text-Based Game</h3>
+                        <p>Interactive text-based adventure game with logical decision trees and dynamic state tracking.
+                            Refined debugging and analytical problem-solving skills.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Logic Design</span>
+                            <span class="tag">Testing</span>
+                        </div>
+                        <button class="project-btn" onclick="window.location.href='python-game.html'">View Project
+                            →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <h2 class="section-title">Send a Letter 💌</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="mailbox">
+                        <div class="mailbox-flag"></div>
+                        <div class="mailbox-body"></div>
+                        <div class="mailbox-post"></div>
+                    </div>
+                    <p class="contact-text">Have a project in mind? Let's work together to create something magical!</p>
+                    <a href="#" class="resume-btn" download>
+                        📄 Download Resume
+                    </a>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message 🪶</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2026 Kiara Cherry | Made with 💖 and a little bit of magic</p>
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank" class="social-link">GitHub</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-link">LinkedIn</a>
+                <a href="mailto:your.email@example.com" class="social-link">Email</a>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
+                Graduating May 2026 | BCIT Computer Systems Technology | Former Hockey Captain
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
