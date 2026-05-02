@@ -530,6 +530,43 @@ body {
     overflow: hidden;
 }
 
+.project-mri-machine {
+    background-image: url('../assets/images/mri-machine.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project-gostudy {
+    background-image: url('../assets/images/gostudy.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project-musclele {
+    background-image: url('../assets/images/musclele.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project-bloomgreener {
+    background-image: url('../assets/images/bloomgreener.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project-bergzonia {
+    background-image: url('../assets/images/bergzonia.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project
+
 .project-1 {
     background: linear-gradient(135deg, var(--grass-green), var(--deep-blue));
 }
@@ -820,4 +857,78 @@ html {
 ::selection {
     background: var(--magic-purple);
     color: white;
+}
+
+/* ── Hamburger Menu ── */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 6px;
+    z-index: 1100;
+}
+
+.hamburger span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background: var(--deep-blue);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.98);
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease, padding 0.3s ease;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.open {
+        max-height: 400px;
+        padding: 1rem 0;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 0.85rem 2rem;
+        font-size: 1.05rem;
+        border-bottom: 1px solid rgba(139, 115, 85, 0.1);
+    }
+
+    .nav-link::after {
+        display: none;
+    }
 }
