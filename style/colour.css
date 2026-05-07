@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&family=UnifrakturMaguntia&display=swap');
+
+:root {
+    /* ── Core Palette ── */
+    --ink: #2b2318;
+    /* deep warm black — headings, strong text   */
+    --parchment: #f5efe3;
+    /* aged paper — page base background          */
+    --parchment-mid: #ede4d3;
+    /* slightly deeper parchment — card fills     */
+    --moss: #4a6741;
+    /* forest moss green — primary accent          */
+    --moss-light: #7a9e6e;
+    /* lighter leaf green — secondary accent       */
+    --sage: #b8ccaa;
+    /* pale sage — backgrounds, subtle fills       */
+    --sky: #8fb5d4;
+    /* Ghibli sky blue — hero, cloud tones         */
+    --sky-pale: #d2e8f5;
+    /* very pale sky — section washes              */
+    --dusk: #c4a882;
+    /* warm golden dusk — buttons, borders         */
+    --dusk-dark: #9a7a52;
+    /* deeper ochre — hover states                 */
+    --rose: #c4867a;
+    /* muted rose terracotta — tags, accents        */
+    --rose-light: #e8c9c3;
+    /* pale blush — subtle tints                   */
+    --indigo: #4a5580;
+    /* European dusk blue — nav, footer             */
+    --indigo-dark: #323a5e;
+    /* deeper indigo — hover, pressed               */
+    --cream: #faf7f2;
+    /* warmest white — card backgrounds             */
+
+    /* ── Derived / Semantic aliases ── */
+    --bg-page: var(--parchment);
+    --bg-card: var(--cream);
+    --bg-section-alt: var(--sky-pale);
+    --text-body: #4a3f32;
+    /* readable warm brown — body copy              */
+    --text-muted: #7a6a58;
+    /* lighter — captions, secondary text           */
+    --border-soft: rgba(74, 103, 65, 0.18);
+    --shadow-warm: rgba(43, 35, 24, 0.10);
+    --shadow-mid: rgba(43, 35, 24, 0.16);
+
+    /* ── Legacy aliases (keeps existing HTML working) ── */
+    --deep-teal: var(--moss);
+    --deep-teal-dark: var(--indigo-dark);
+    --fern: var(--moss-light);
+    --fern-dark: var(--moss);
+    --regent-blue: var(--sky);
+    --regent-dark: var(--sky);
+    --red-orange: var(--rose);
+    --red-orange-dark: var(--dusk-dark);
+    --sky-blue: var(--sky);
+    --cloud-white: var(--cream);
+    --warm-cream: var(--parchment-mid);
+    --grass-green: var(--moss-light);
+    --sunset-orange: var(--dusk);
+    --deep-blue: var(--indigo);
+    --earth-brown: var(--text-body);
+    --magic-purple: var(--indigo);
+    --soft-pink: var(--rose-light);
+    --night-blue: var(--indigo-dark);
+    --totoro: var(--dusk);
+    --ponyo: var(--moss);
+    --cotton-cloud: var(--cream);
+    --misty: var(--sky-pale);
+    --bright: var(--moss-light);
+    --grassy-field: var(--moss-light);
+    --plum: var(--indigo-dark);
+    --kiki-red: var(--moss);
+    --forest: var(--moss);
+    --teal: var(--moss);
+}

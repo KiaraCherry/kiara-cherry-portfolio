@@ -1,0 +1,78 @@
+/* 
+   Playfair Display → h1–h4, titles
+   Lora → body text  */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&family=UnifrakturMaguntia&display=swap');
+
+/* Base body */
+body {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.85;
+    color: var(--text-body);
+}
+
+/* Logo */
+.logo {
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 1.6rem;
+    letter-spacing: 0.01em;
+}
+
+/* Headings: Playfair Display*/
+h1,
+h2,
+h3,
+h4,
+.hero-title,
+.section-title,
+.project-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    line-height: 1.25;
+}
+
+h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.55rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+/* Form elements */
+input,
+textarea,
+button,
+select {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 1rem;
+}
+
+/* Italic accent */
+.font-italic {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+/* Nickname / annotation span */
+.nickname {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 0.4em;
+    font-weight: 400;
+    color: var(--moss);
+    opacity: 0.9;
+    letter-spacing: 0.04em;
+}
