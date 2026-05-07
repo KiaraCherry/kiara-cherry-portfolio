@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kiki's Delivery Website 🧹✨</title>
+    <title>Kiki's Delivery Website</title>
+    <link rel="icon" type="image/png" href="assets/icons/logo.png">
     <link rel="stylesheet" href="style/style.css">
     <script defer src="js/script.js"></script>
 </head>
 
 <body>
-    <!-- Animated clouds in background -->
+    <!-- Animated clouds -->
     <div class="clouds">
         <div class="cloud cloud1"></div>
         <div class="cloud cloud2"></div>
@@ -18,85 +19,185 @@
         <div class="cloud cloud4"></div>
     </div>
 
-    <!-- Stars for magical effect -->
+    <!-- Twinkling star accents -->
     <div class="stars"></div>
 
-    <!-- Custom cursor (broom) -->
+    <!-- Custom broom cursor -->
     <div class="broom-cursor"></div>
 
-    <!-- Navigation -->
+    <!-- navigation -->
     <nav class="navbar">
         <div class="nav-content">
-            <h1 class="logo">🧹 Kiki's Delivery Website</h1>
+            <h1 class="logo"><img src="assets/icons/logo.png" alt="logo">Kiki's Delivery Website</a></h1>
             <ul class="nav-links">
                 <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#about-me" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- hero -->
     <section id="home" class="hero">
         <div class="hero-content">
             <div class="pixel-character">
                 <div class="character-container">
-                    <!-- Pixel art Kiki-inspired character -->
                     <div class="pixel-kiki">
-                        <img src="assets/images/kiki.png" alt="Kiki Pixel Art">
+                        <img src="assets/icons/kiki.png" alt="Kiki pixel art">
                     </div>
                 </div>
             </div>
+
             <h2 class="hero-title">
-                <span class="title-line">Hi, I'm Kiara Cherry (Nickname: Kiki)</span>
+                <span class="title-line">Hi, I'm Kiara Cherry
+                    <span class="nickname">(aka Kiki)</span>
+                </span>
                 <span class="title-line">Welcome to My Portfolio!</span>
             </h2>
-            <p class="hero-subtitle">Computer Systems Technology student at British Columbia Institute of Technology
-                (BCIT) delivering
-                web experiences, games, and VR simulations with determination and a touch of magic ✨</p>
+
+            <p class="hero-subtitle">
+                Computer Systems Technology student at BCIT — delivering web experiences,
+                games, and VR simulations with determination and a touch of magic ✨
+            </p>
+
             <button class="cta-button">View My Work</button>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- intro -->
     <section id="about" class="about-section">
         <div class="section-container">
-            <h2 class="section-title">About Me 🌙</h2>
+            <h2 class="section-title">My Story <img src="assets/icons/book.png" alt="book"></h2>
             <div class="about-content">
-                <div class="about-card">
-                    <div class="card-icon"></div>
+
+                <div class="about-card reveal">
+                    <div class="card-icon"><img src="assets/icons/moon.png" alt="moon"></div>
                     <h3>The Journey</h3>
                     <p>Like Kiki leaving home to find her way, I'm on my own journey through Computer Systems Technology
                         at BCIT. From web development to VR simulations and game design, I'm exploring every corner of
                         the tech world and creating magical experiences along the way.</p>
                 </div>
-                <div class="about-card">
-                    <div class="card-icon"></div>
+
+                <div class="about-card reveal">
+                    <div class="card-icon"><img src="assets/icons/craft.png" alt="craft"></div>
                     <h3>The Craft</h3>
-                    <p>I specialize in full-stack web development (HTML5, CSS3, JavaScript, Node.js), game development
+                    <p>I specialise in full-stack web development (HTML5, CSS3, JavaScript, Node.js), game development
                         (Unity, libGDX), and VR simulations. Whether it's building responsive websites, creating
-                        interactive games, or debugging complex C# systems, every project is a special delivery!</p>
+                        interactive games, or debugging complex C# systems — every project is a special delivery!</p>
                 </div>
-                <div class="about-card">
-                    <div class="card-icon"></div>
+
+                <div class="about-card reveal">
+                    <div class="card-icon"><img src="assets/icons/feathers.png" alt="magic"></div>
                     <h3>The Magic</h3>
                     <p>BCIT President's Entrance Award recipient, hockey team captain, and lifelong learner. I bring
                         leadership, adaptability, and a collaborative spirit to every project. I thrive under pressure
                         and believe every line of code should tell a story.</p>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- about me-->
+    <section id="about-me" class="about-me-section">
+        <div class="about-me-inner section-container">
+            <h2 class="section-title">About Me (add some pixel art)</h2>
+
+            <div class="about-me-layout">
+
+                <!-- Photo strip -->
+                <div class="about-photo-strip">
+
+                    <div class="photo-frame">
+                        <img src="assets/images/photo-1.jpg" alt="apic"
+                            onerror="this.parentNode.innerHTML='<div class=\'photo-placeholder\'><span>🪴</span><p>Add photo here</p></div>'">
+                        <div class="photo-caption">on the ice, where it all began 🏒</div>
+                    </div>
+
+                    <div class="photo-frame">
+                        <img src="assets/images/photo-2.jpg" alt="an epic pic"
+                            onerror="this.parentNode.innerHTML='<div class=\'photo-placeholder\'><span>✨</span><p>Add photo here</p></div>'">
+                        <div class="photo-caption">building something new ☕</div>
+                    </div>
+
+                    <div class="photo-frame">
+                        <img src="assets/images/photo-3.jpg" alt="picture"
+                            onerror="this.parentNode.innerHTML='<div class=\'photo-placeholder\'><span>🌿</span><p>Add photo here</p></div>'">
+                        <div class="photo-caption">somewhere in the forest 🌲</div>
+                    </div>
+
+                </div>
+
+                <!-- Text content -->
+                <div class="about-text-content">
+
+                    <p class="about-text-intro">
+                        Hi I'm Kiara.
+                    </p>
+
+                    <div class="about-paragraph" data-label="the beginning">
+                        <p>
+
+                        </p>
+                    </div>
+
+                    <div class="about-paragraph" data-label="how i ended up here">
+                        <p>
+
+                        </p>
+                    </div>
+
+                    <div class="about-paragraph" data-label="outside of code">
+                        <p>
+
+                        </p>
+                    </div>
+
+                    <!-- Fun trait chips -->
+                    <div class="about-traits">
+                        <div class="trait-chip">
+                            <span class="trait-icon">🏒</span>
+                            <p>Team Captain</p>
+                        </div>
+                        <div class="trait-chip">
+                            <span class="trait-icon">🎓</span>
+                            <p>President's Entrance Award</p>
+                        </div>
+                        <div class="trait-chip">
+                            <span class="trait-icon">🎮</span>
+                            <p>something</p>
+                        </div>
+                        <div class="trait-chip">
+                            <span class="trait-icon">🌿</span>
+                            <p>something</p>
+                        </div>
+                        <div class="trait-chip">
+                            <span class="trait-icon">☕</span>
+                            <p>something</p>
+                        </div>
+                        <div class="trait-chip">
+                            <span class="trait-icon">✈️</span>
+                            <p>Graduating May 2026</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section-->
     <section id="skills" class="skills-section">
         <div class="section-container">
-            <h2 class="section-title">My Toolkit</h2>
+            <h2 class="section-title">My Toolkit (add wand)</h2>
             <div class="skills-grid">
-                <div class="skill-category">
+
+                <div class="skill-category reveal">
                     <h3>Programming Languages</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Python</span>
@@ -109,8 +210,8 @@
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3>Game & VR Development</h3>
+                <div class="skill-category reveal">
+                    <h3>Game &amp; VR Development</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Unity</span>
                         <span class="skill-tag">libGDX</span>
@@ -118,7 +219,7 @@
                     </div>
                 </div>
 
-                <div class="skill-category">
+                <div class="skill-category reveal">
                     <h3>Web Development</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">HTML5</span>
@@ -131,7 +232,7 @@
                     </div>
                 </div>
 
-                <div class="skill-category">
+                <div class="skill-category reveal">
                     <h3>Frontend Frameworks</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Bootstrap</span>
@@ -140,8 +241,8 @@
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3>Tools & Platforms</h3>
+                <div class="skill-category reveal">
+                    <h3>Tools &amp; Platforms</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Git</span>
                         <span class="skill-tag">GitHub</span>
@@ -152,8 +253,8 @@
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3>Data & Databases</h3>
+                <div class="skill-category reveal">
+                    <h3>Data &amp; Databases</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">SQL</span>
                         <span class="skill-tag">MongoDB</span>
@@ -161,84 +262,72 @@
                         <span class="skill-tag">Statistics</span>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- projects :DD-->
     <section id="projects" class="projects-section">
         <div class="section-container">
-            <h2 class="section-title">Recent Deliveries 📦</h2>
+            <h2 class="section-title">Deliveries 📦(maybe box)</h2>
             <div class="projects-grid">
 
-                <!-- <div class="project-card">
-                    <div class="project-image project-6"></div>
-                    <div class="project-content">
-                        <h3>Embedded Systems Project</h3>
-                        <p></p>
-                        <div class="project-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MongoDB</span>
-                        </div>
-                        <button class="project-btn" onclick="window.location.href='bloomgreener.html'">View Project
-                            →</button>
-                    </div>
-                </div> -->
-
-                <div class="project-card">
+                <div class="project-card reveal">
                     <div class="project-image project-musclele"></div>
                     <div class="project-content">
-                        <h3>Musclele Web Game</h3>
-                        <p></p>
+                        <h3>Musclele</h3>
+                        <p>A Wordle-style muscle anatomy guessing game. Built the full front-end and game logic,
+                            making anatomy revision actually fun for students.</p>
                         <div class="project-tags">
                             <span class="tag">JavaScript</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MongoDB</span>
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
                         </div>
-                        <button class="project-btn" onclick="window.location.href='bloomgreener.html'">View Project
-                            →</button>
+                        <button class="project-btn"
+                            onclick="window.location.href='https://muscle-guessing-game.onrender.com/'">
+                            View Project →
+                        </button>
                     </div>
                 </div>
 
-                <div class="project-card">
-
+                <div class="project-card reveal">
                     <div class="project-image project-mri-machine"></div>
                     <div class="project-content">
                         <h3>BCIT MRI VR Simulation</h3>
                         <p>Contributed to a virtual reality medical training simulation for MRI students. Debugged
-                            complex
-                            Unity C# systems, designing an interactive waiting room, and ported VR functionality across
-                            different
-                            platforms.</p>
+                            complex Unity C# systems, designed an interactive waiting room, and ported VR functionality
+                            across platforms.</p>
                         <div class="project-tags">
                             <span class="tag">Unity</span>
                             <span class="tag">C#</span>
                             <span class="tag">VR Development</span>
                         </div>
-                        <button class="project-btn" onclick="window.location.href='mri.html'">View Project
-                            →</button>
+                        <button class="project-btn" onclick="window.location.href='mri.html'">
+                            View Project →
+                        </button>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card reveal">
                     <div class="project-image project-bloomgreener"></div>
                     <div class="project-content">
                         <h3>BloomGreener Web App</h3>
                         <p>Full-stack web application encouraging eco-friendly habits with tips, reminders, and
-                            personalized tasks. Collaborated with a team of five using Git/GitHub for seamless version
-                            control.</p>
+                            personalised tasks. Collaborated with a team of five using Git/GitHub.</p>
                         <div class="project-tags">
                             <span class="tag">JavaScript</span>
                             <span class="tag">Node.js</span>
                             <span class="tag">MongoDB</span>
                         </div>
-                        <button class="project-btn" onclick="window.location.href='bloomgreener.html'">View Project
-                            →</button>
+                        <button class="project-btn"
+                            onclick="window.location.href='https://two800bloomgreener.onrender.com/pages/landing'">
+                            View Project →
+                        </button>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card reveal">
                     <div class="project-image project-gostudy"></div>
                     <div class="project-content">
                         <h3>GoStudy Mobile Web App</h3>
@@ -249,78 +338,90 @@
                             <span class="tag">CSS3</span>
                             <span class="tag">JavaScript</span>
                         </div>
-                        <button class="project-btn" onclick="window.location.href='gostudy.html'">View Project
-                            →</button>
+                        <button class="project-btn" onclick="window.location.href='https://gostudy.web.app/'">
+                            View Project →
+                        </button>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card reveal">
                     <div class="project-image project-4"></div>
                     <div class="project-content">
                         <h3>Sims 4 Mod Development</h3>
-                        <p>Custom gameplay systems using Python to extend player mechanics and interactions. Built
-                            event-driven scripting systems and optimized mod functionality for performance.</p>
+                        <p>Custom gameplay systems using Python to extend player mechanics and interactions.
+                            Built event-driven scripting systems and optimised mod functionality for performance.</p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
                             <span class="tag">Game Design</span>
                             <span class="tag">Scripting</span>
                         </div>
-                        <button class="project-btn" onclick="window.location.href='sims4mod.html'">View Project
-                            →</button>
+                        <button class="project-btn" onclick="window.location.href='sims4mod.html'">
+                            View Project →
+                        </button>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card reveal">
                     <div class="project-image project-bergzonia"></div>
                     <div class="project-content">
                         <h3>libGDX Java Game</h3>
-                        <p>Single-player game built with libGDX framework. Implemented data structures to manage in-game
-                            variables and states, developing technical problem-solving skills.</p>
+                        <p>Single-player game built with libGDX framework. Implemented data structures to manage
+                            in-game variables and states, developing deep technical problem-solving skills.</p>
                         <div class="project-tags">
                             <span class="tag">Java</span>
                             <span class="tag">libGDX</span>
                             <span class="tag">Game Dev</span>
                         </div>
-                        <button class="project-btn" onclick="window.location.href='libgdxgame.html'">View Project
-                            →</button>
+                        <button class="project-btn" onclick="window.location.href='libgdxgame.html'">
+                            View Project →
+                        </button>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card reveal">
                     <div class="project-image project-6"></div>
                     <div class="project-content">
                         <h3>Python Text-Based Game</h3>
-                        <p>Interactive text-based adventure game with logical decision trees and dynamic state tracking.
-                            Refined debugging and analytical problem-solving skills.</p>
+                        <p>Interactive text adventure with branching decision trees and dynamic state tracking.
+                            Refined debugging and analytical problem-solving skills along every path.</p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
                             <span class="tag">Logic Design</span>
                             <span class="tag">Testing</span>
                         </div>
-                        <button class="project-btn" onclick="window.location.href='pythongame.html'">View Project
-                            →</button>
+                        <button class="project-btn" onclick="window.location.href='pythongame.html'">
+                            View Project →
+                        </button>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- my contact please contact i need job -->
     <section id="contact" class="contact-section">
         <div class="section-container">
-            <h2 class="section-title">Send a Letter 💌</h2>
+            <h2 class="section-title">Send a Letter <img src="assets/icons/envelope.png" alt="envelope"></h2>
             <div class="contact-content">
+
                 <div class="contact-info">
                     <div class="mailbox">
                         <div class="mailbox-flag"></div>
                         <div class="mailbox-body"></div>
                         <div class="mailbox-post"></div>
                     </div>
+                    <p class="contact-text">
+                        Got any questions or comments?<br>
+                        Please drop me a letter! 🌿
+                    </p>
+                    <a href="mailto:cherryakiara@gmail.com" class="resume-btn">Send an Email ✉️(pixel art)</a>
                 </div>
+
                 <form class="contact-form">
                     <div class="form-group">
                         <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Your Email</label>
@@ -331,13 +432,14 @@
                         <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
                             required></textarea>
                     </div>
-                    <button type="submit" class="submit-btn">Send Message 🪶</button>
+                    <button type="submit" class="submit-btn">Send Message 🪶(add some pixel art)</button>
                 </form>
+
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- footer -->
     <footer class="footer">
         <div class="footer-content">
             <p>© 2026 Kiara Cherry | Made with 💖 and a little bit of magic</p>
@@ -347,12 +449,11 @@
                     class="social-link">LinkedIn</a>
                 <a href="mailto:cherryakiara@gmail.com" class="social-link">Email</a>
             </div>
-            <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
-                Graduating May 2026 | BCIT Computer Systems Technology
+            <p style="margin-top:1rem; font-size:0.85rem; opacity:0.65;">
+                Graduating May 2026 · BCIT Computer Systems Technology
             </p>
         </div>
     </footer>
-
 
 </body>
 
